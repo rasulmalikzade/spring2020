@@ -1,0 +1,50 @@
+Wrapper ve ArraysList
+Primitive butun Wrapper-I qebul edir, meselen
+ Short sh1 =3000;
+int z2 = sh1;
+Wrapper ise yalniz oz formulu olani qebul edir  (Integer - int , Short - short, String - string, Boolean - boolean)
+
+Wrapper class-da olanlar Primitivetype-da olanlarin hem tam yazilisi, hem de ilk herifi boyuk yazilir.
+
+Wrapper Primitive //autoboxing
+AutoBoxing: converting primitive values to wrapper class
+int a = 100;
+Integer b = a ;
+UnBoxing: converting wrapper class value to primitives
+Integer a = 100;
+int b = a;
+None: primitive to primitive
+
+METHODS
+Metodlar arasinda parse istifade olunursa,
+String str2 = “15.5”;
+Double d1 = Double.parseDouble(str2);
+// double = double   none
+Double d2 = Double.valueOf(str2);
+Double = Double  unboxing
+parse methods:
+converts string of text to the primitives, returns primitive values
+String str = "123";
+Integer.parseInt(str);   //Byte.parseByte(str) // Short.parseShort()
+int a1 = Integer.parseInt(str) // bye b1 = Byte.parseByte(str)
+wrong  Integer newInt1 = Byte.parseByte(str);
+right  Integer newInt2 = (int) Byte.parseByte(str)   AutoBoxing
+
+parse method of Boolean: any string other than "true" will ALWAYS return false, not case sensitive TruE, true doesnot matter
+Integer = (int)byte;
+Integer = int
+
+
+
+
+valueOf methods
+converting string to wrapper class value, returns wrapper class values
+unboxing zamani int –den double kecmek mumkundur, cunki, value gosterir
+
+Boolean = Boolean  --> none
+boolean = Boolean  --> unBoxing
+Boolean = boolean  --> autoBoxing
+
+MAX_VALUE  AND   MIN_VALUE
+Min_Value: returns the minimum    byte max = Byte.MAX_VALUE;
+Max_Value: returns the maximum    short min = Short.MIN_VALUE;
