@@ -1,5 +1,5 @@
 package day11_Scanner;
-
+//my main class
 public class browserName {
     public static void main(String[] args) {
         String browserName = "Firefox";
